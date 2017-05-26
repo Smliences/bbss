@@ -1,0 +1,110 @@
+@charset "utf-8";
+*{
+	padding: 0;
+	margin: 0;
+}
+
+#all{
+	position: relative;
+	width: 100%;
+}
+
+/*----------------------------------------------头部---------------------------------------------------*/
+#header{
+	position: relative;
+	width: 100%;
+	height: 80px;
+	background-color: black;
+}
+#header_img1{
+	position: absolute;
+	width: 150px;
+	height: 80px;
+}
+#header_p1{
+	position: absolute;
+	font-family: "楷体";
+	font-size: 2em;
+	color: white;
+	line-height: 80px;
+	vertical-align: middle;
+	left: 11%;
+}
+
+/*-----------------------------------头部--搜索框-------------------------------------*/
+#header_form{
+	position: absolute;
+	line-height: 80px;
+	vertical-align: middle;
+	left: 50%;
+}
+#header_search{
+	height: 25px;
+	border-radius: 5px 0px 0px 5px;
+}
+
+#header_submit{
+	position: relative;	
+	height: 27px;
+	cursor: pointer;
+	background-color: white;
+	top: 29px;
+}
+#header_submit>a{
+	position: relative;
+	top: -29px;
+}
+/*----------------------------------------------------------------------------------*/
+
+
+#header_RL{
+	position: absolute;
+	color: white;
+	line-height: 80px;
+	vertical-align: middle;
+	left: 85%;
+}
+#header_RL>a{
+	text-decoration: none;
+	color: white;
+}
+
+
+/*----------------------------------------------主体---------------------------------------------------*/
+#main{
+	position: relative;
+}
+
+/*----------------------------------------时钟部分---------------------------------------------*/
+#clock{
+	position: relative;
+	display: block;
+	margin: 10px 0px 0px 10px;
+}
+
+/*----------------------------------------轮播部分---------------------------------------------*/
+.carousel{	
+	margin-top: 50px;
+}
+
+
+
+/*----------------------------------------------底部---------------------------------------------------*/
+#footer{
+	position: relative;
+	width: 100%;
+	height: 80px;
+	background-color: black;
+	margin-top: 10%;
+}
+#footer>p{
+	position: absolute;
+	font-family: "宋体";
+	font-size: 1.2em;
+	color: white;
+	line-height: 80px;
+	width: 100%;
+	text-align: center;
+	vertical-align: middle;
+}
+

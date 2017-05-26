@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>IT黑洞--管理员</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<link rel="stylesheet" type="text/css" href="css/manager.css"/>
+	</head>
+	<body background="img/theme.jpg">
+		
+		<div id="all">
+			<!-------------------------------------------头部----------------------------------------------->
+			<header id="header">
+				<img id="header_img1" src="img/Logo.png"/>
+				<p id="header_p1">IT黑洞--论坛之家</p>
+				
+				<!-----------------------------------搜索框-------------------------------------->
+				<form id="header_form" name="header_form">
+					<input type="text" name="header_search" id="header_search" placeholder="请输入您要搜索的内容" />
+					<button id="header_submit"><a href="#"><img src="img/search.png"></a></button>
+				</form>
+				
+				<div id="header_RL">
+					<a href="">管理员</a>
+					<span> | </span>
+					<a href="index.html">返 回</a>
+					<span> | </span>
+					<a href="" onclick="window.close()">退 出</a>
+				</div>
+				
+				
+			</header>
+			<!-------------------------------------------主体----------------------------------------------->
+			<main id="main">				
+				<!-----------------------------------当地天气-------------------------------------->
+				<div id="weather">
+			    	<iframe style="float: right;" width="420" scrolling="no" height="60" frameborder="0" allowtransparency="true" src="http://i.tianqi.com/index.php?c=code&id=12&icon=1&num=5"></iframe>
+			    </div>
+			    
+				<!-----------------------------------时钟部分-------------------------------------->
+				<canvas id="clock" width="100" height="100"></canvas>
+				
+				<!------------------------------------管理员--------------------------------------->
+				<ul id="main_ul1">
+					<li>【 用 户 信 息 】</li>
+					<input type="checkbox" name="cb1" id="cb1" value="" />
+					<label name="cb1">用户一&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;版主</label><br />
+					<input type="checkbox" name="cb2" id="cb2" value="" />
+					<label name="cb2">用户二&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;版主</label><br />
+					<input type="checkbox" name="cb3" id="cb3" value="" />
+					<label name="cb3">用户三&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;普通用户</label><br />
+					<input type="checkbox" name="cb4" id="cb4" value="" />
+					<label name="cb4">用户四&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;普通用户</label><br />
+					<button id="user_bt1"><a> 删 除 用 户 信 息 </a></button>
+					<button id="user_bt2"><a> 设 置 用 户 等 级 </a></button>
+				</ul>
+				<ul id="main_ul2">
+					<li>【 最 新 栏 目 】</li>
+					<input type="checkbox" name="lanmu1" id="lanmu1" value="" />
+					<label name="lanmu1">Java -- SSH框架之详情&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2017/05/02</label><br />
+					<input type="checkbox" name="lanmu2" id="lanmu2" value="" />
+					<label name="lanmu2">JavaScript入门级介绍&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2017/05/02</label><br />
+					<input type="checkbox" name="lanmu3" id="lanmu3" value="" />
+					<label name="lanmu3">vue.js框架实例&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2017/05/02</label><br />
+					<input type="checkbox" name="lanmu1" id="lanmu1" value="" />
+					<label name="lanmu1">论程序的腐蚀化&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2017/05/02</label><br />
+					<button id="lanmu_bt1"><a> 删 除 最 新 栏 目 </a></button>
+					<button id="lanmu_bt2"><a> 添 加 最 新 栏 目  </a></button>
+					<button id="lanmu_bt3"><a> 置 顶 当 前 栏 目  </a></button>
+				</ul>
+				<ul id="main_ul3">
+					<li>【 最 新 主 题 】</li>
+					<input type="checkbox" name="zhuti1" id="zhuti1" value="" />
+					<label name="zhuti1">Java -- SSH框架之详情&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2017/05/02</label><br />
+					<input type="checkbox" name="zhuti2" id="zhuti2" value="" />
+					<label name="zhuti2">JavaScript入门级介绍&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2017/05/02</label><br />
+					<input type="checkbox" name="zhuti3" id="zhuti3" value="" />
+					<label name="zhuti3">vue.js框架实例&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2017/05/02</label><br />
+					<input type="checkbox" name="zhuti4" id="zhuti4" value="" />
+					<label name="zhuti4">论程序的腐蚀化&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2017/05/02</label><br />
+					<input type="checkbox" name="zhuti5" id="zhuti5" value="" />
+					<label name="zhuti5">Java -- SSH框架之详情&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2017/05/02</label><br />
+					<button id="zhuti_bt1"><a> 删 除 主 题</a></button>
+					<button id="zhuti_bt2"><a> 添 加 置 顶  </a></button>
+					<button id="zhuti_bt3"><a> 主 题 置 顶 </a></button>
+					<button id="zhuti_bt4"><a> 移 动 主 题 </a></button>
+					<button id="zhuti_bt5"><a> 合 并 主 题 </a></button>
+					<button id="zhuti_bt6"><a> 拆 分 主 题 </a></button>
+				</ul>
+			
+			</main>
+				
+			<!-------------------------------------------底部----------------------------------------------->
+			<footer id="footer">
+					<p>Copyright @ 2017 IT黑洞小组</p>
+			</footer>
+		</div>	
+		
+	</body>
+</html>
+
+<script src="js/index.js"></script>

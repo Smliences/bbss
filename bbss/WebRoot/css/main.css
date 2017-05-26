@@ -1,0 +1,35 @@
+@charset "utf-8";
+*{
+	padding: 0;
+	margin: 0;
+}
+
+#main_ul1,#main_ul2,#main_ul3{
+	position: relative;
+	display: block;
+	width: 80%;
+	list-style: none;
+	margin: 50px auto;
+	line-height: 40px;
+}
+#main_ul1>li>a,#main_ul2>li>a,#main_ul3>li>a{
+	font-family: "宋体";
+	font-size: 20px;
+	text-decoration: none;
+	color: black;
+}
+#main_ul1>li>a:hover,#main_ul2>li>a:hover,#main_ul3>li>a:hover{
+	color: #3399FF;
+}
+
+
+#header_submit{
+	top: 2px;
+}	
+#header_submit>a{
+	top: 0px;
+}
+/*----------------------------------------------底部---------------------------------------------------*/
+#footer{
+	margin-top: 15%;
+}

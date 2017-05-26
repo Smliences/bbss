@@ -1,0 +1,91 @@
+@charset "utf-8";
+*{
+	padding: 0;
+	margin: 0;
+}
+
+/*-----------------------------------注册窗口--------------------------------------*/
+#register_form{
+	position: relative;
+	margin: 4% auto;
+	border-top:5px #3399FF solid;
+	border-left: 1px gainsboro solid;
+	border-right: 1px gainsboro solid;
+	border-bottom: 1px gainsboro solid;
+	height: 400px;
+	width: 40%;
+	background-color: white;
+}
+#register_p1{
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 50px;
+	font-family: "宋体";
+	font-size: 25px;
+	color: #3399FF;
+	font-weight: bold;
+	line-height: 50px;
+	vertical-align: middle;
+	text-align: center;
+}
+#register_form>input{
+	position: relative;
+	height: 25px;
+	width: 250px;
+	float: right;
+	margin-right: 90px;
+	top: 84px;
+}
+#register_form>label{
+	position: relative;
+	font-family: "宋体";
+	font-size: 18px;
+	color: grey;
+	line-height: 40px;
+	top: 80px;
+	margin-left: 100px;
+}
+
+#register_form>input:nth-of-type(3){
+	width: 130px;
+	margin-right: 210px;
+}
+
+#register_form>input:nth-of-type(6){
+	display: block;
+	position: relative;
+	width: 65%;
+	height: 40px;
+	background-color: #3399FF;
+	font-family: "宋体";
+	font-size: 20px;
+	color: white;
+	line-height: 40px;
+	cursor: pointer;
+	top: 110px;
+}
+#register_form>input:nth-of-type(6):hover{
+	background-color:#90B138;
+}
+#register_p2{
+	position:absolute;
+	font-family: "宋体";
+	font-size: 12px;
+	color: darkgray;
+	top:380px;
+	left: 85px;	
+}
+
+
+#header_submit{
+	top: 2px;
+}	
+#header_submit>a{
+	top: 0px;
+}
+/*----------------------------------------------底部---------------------------------------------------*/
+#footer{
+	margin-top: 10%;
+}
+

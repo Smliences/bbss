@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="demo1" extends="struts-default" namespace="/">
+	<interceptors>
+		<interceptor name="interceptor" class="com.bbs.ssh.interceptor.Interceptor"></interceptor>
+	</interceptors>
+	<global-results>
+			<result name="login">/login.jsp</result>
+		</global-results>
+		<action name="user_*" class="userAction" method="{1}">
+			<result name="register">/register.jsp</result>
+			<result name="login">/login.jsp</result>
+			<result name="index" type="redirectAction">question_listpage.action</result>
+		</action>
+		<action name="question_*" class="questionAction" method="{1}">
+			<interceptor-ref name="defaultStack"></interceptor-ref>
+			<interceptor-ref name="interceptor">
+				<param name="excludeMethods">listpage,topostContent</param>
+			</interceptor-ref>
+			<!-- <interceptor-ref name="interceptor">
+				<param name="execludeMethods">listpage,topostContent</param>
+			</interceptor-ref> -->
+			<result name="tomain" type="redirectAction">question_listpage</result>
+			<result name="main">/main.jsp</result>
+			<result name="posted">/posted.jsp</result>
+			<result name="postContent">/postContent.jsp</result>
+		</action>
+		<action name="reply_*" class="replyAction" method="{1}">
+			<interceptor-ref name="interceptor"></interceptor-ref>
+			<interceptor-ref name="defaultStack"></interceptor-ref>
+			<result name="topostcontent" type="redirectAction">question_topostContent.action?qid=${question.qid}
+			</result>
+		</action>
+		<action name="manager_*" class="managerAction" method="{1}">
+			<result name="managerlogin">/managerlogin.jsp</result>
+			<result name="tomanager" type="redirectAction">manager_toList</result>
+			<!-- <interceptor-ref name="interceptor">
+				<param name="execludeMethods">login,toList</param>
+			</interceptor-ref>
+			<interceptor-ref name="defaultStack"></interceptor-ref> -->
+			<result name="edit">/edit.jsp</result>
+			<result name="question">/question.jsp</result>
+			<result name="manager">/manager.jsp</result>
+		</action>
+		<action name="checkAction" class="checkAction">
+		</action>
+	</package>
+</struts>
+
+
+
+

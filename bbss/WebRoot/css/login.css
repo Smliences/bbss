@@ -1,0 +1,112 @@
+@charset "utf-8";
+*{
+	padding: 0;
+	margin: 0;
+}
+
+/*-----------------------------------登录窗口--------------------------------------*/
+#login_form{
+	position: relative;
+	width:400px;
+	height:350px;
+	border:1px solid #CCCCCC;
+	border-top:3px solid #39F;
+	background-color:#FFF;
+	margin:auto;	
+	margin-top: 60px;
+	}
+.text{
+	width:398px;
+	height:130px;
+	text-align:center;
+	}
+h2{
+	color:#39F;
+	line-height: 130px;
+	font-family:"微软雅黑";
+	}
+.get,.get1,.subm{
+	width:398px;
+	margin-bottom:30px;	
+	text-align:center;
+	font-family:"微软雅黑";
+	}
+.get>input,.get1>input,.subm>input{
+	width:280px;
+	height:29px;	
+	}
+#num{
+	color:#999;
+	background-image:url(../img/user.png);
+	background-repeat:no-repeat;
+	padding-left:30px;
+	border:1px solid #CCC;
+	line-height:29px;
+	font-size:16px;
+	}
+#pass{
+	color:#999;
+	background-image:url(../img/password.png);
+	background-repeat:no-repeat;
+	padding-left:30px;
+	border:1px solid #CCC;
+	line-height:29px;
+	font-size:16px;
+	}
+#sub{
+	background-color:#39F;
+	color:#FFF;
+	font-size:20px;
+	width:310px;
+	height:35px;
+	}
+#sub:hover{
+	background-color:#90B138;
+	cursor: pointer;
+}
+
+
+#left>a{
+	float:left;
+	text-decoration:none;
+	font-size:15px;
+	margin-top:-10px;
+	color: #6C93E4;
+	}
+#left{
+	padding-left:45px;
+	}
+	
+#middle>a{
+	float:left;
+	text-decoration:none;
+	font-size:15px;
+	margin-top:-10px;
+	color: #6C93E4;
+	}
+#middle{
+	padding-left:160px;
+	}
+
+#right>a{
+	float:left;
+	text-decoration:none;
+	font-size:15px;
+	margin-top:-10px;
+	color: #6C93E4;
+	}
+#right{
+	padding-left:294px;
+	}
+	
+
+
+#header_submit{
+	top: 2px;
+}	
+#header_submit>a{
+	top: 0px;
+}
+#footer{
+	margin-top: 12%;
+}
